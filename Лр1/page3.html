@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Rusanov Lr1" content="width=device-width, initial-scale=1.0">
+    <title>Русанов Данііл КН-31 Варіант №2</title>
+
+    <style>
+        body, html {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        fieldset textarea,
+        fieldset label,
+        fieldset select {
+            margin-bottom: 10px;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Проектування та розробка веб-застосувань</h1>
+    <h2>Лабораторна робота №1</h2>
+    <h2>Завдання 3 варіант 2</h2>
+    <h2>Виконав студент групи КН-31 Русанов Данііл</h2>
+
+    <ul>
+        <li><a href="main_page.html" title="Main page">Main page</a></li>
+        <li><a href="page2.html" title="Page2">Page2</a></li>
+    </ul>
+    <h3>Завдання:</h3>
+    Необхідно розробити форму для реєстрації студента у веб-системі. Необхідно заповнити наступні дані:
+    <ul> 
+        <li>Основні дані про студента, включають ПІБ, назву групи (вибирається із списку), форму навчання (бюджет або контракт) <br>реалізується у вигляді перемикача, коротку інформацію про студента, електронна адреса студента;</li>
+        <li>Особисті дані студента, включають дані паспорта, ідентифікаційний код, рік народження, стать (реалізується у вигляді перемикача).</li>
+    </ul>
+
+
+    <form>
+        <fieldset>
+            <textarea placeholder="Прізвище Ім'я По-батькові"></textarea>
+            <input type="email" placeholder="Електронна адреса">
+            <p>
+                <label>Назва групи:</label>
+                <select>
+                    <option value="1">Кн-11</option>
+                    <option value="2">КБ-11</option>
+                    <option value="3">МІТ-11</option>
+                    <option value="4">ІПЗ-11</option>
+                </select>
+            </p>
+            <p>
+                <label>Форма навчання:</label>
+                <input type="radio" name="form" id="budget">
+                <label for="budget">Бюджет</label>
+                <input type="radio" name="form" id="contract">
+                <label for="contract">Контракт</label>
+            </p>
+            <p>
+                <label>Особисті дані:</label>
+                <textarea placeholder="Паспортні дані"></textarea>
+                <textarea placeholder="Ідентифікаційний код"></textarea>
+                <label>
+                    Дата народження:
+                    <input type="date">
+                </label>
+            </p>
+            <p>
+                <label>Стать:</label>
+                <input type="radio" name="sex" id="male">
+                <label for="male">Чоловіча</label>
+                <input type="radio" name="sex" id="female">
+                <label for="female">Жіноча</label>
+            </p>
+        </fieldset>
+        <button type="submit"> Відправити </button>
+    </form>
+</body>
+</html>
