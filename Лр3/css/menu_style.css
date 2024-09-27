@@ -1,0 +1,43 @@
+.menu {
+    background-color: black;
+    opacity: 09;
+    width: 10%;
+    height: 2432px;
+    float: left; 
+    display: block;
+   }
+
+.menu a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+
+    /* Вирівнювання інформації по центру блока */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.menu a:hover {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.menu_href_bottom {
+    margin-top: 256px;
+}
+
+.menu_href_main_section1,
+.menu_href_extra_section,
+.menu_href_contacts,
+.menu_href_main_section2 {
+    margin: 20px 0;
+}
+
+.menu_href_main_section2 {
+    margin-top: 1800px;
+}

@@ -1,0 +1,32 @@
+.contacts {
+    height: 192px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.contacts_left,
+.contacts_right {
+    width: 50%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.contacts_textarea {
+    width: 80%;
+    height: 50px;
+    font-size: 18px; 
+    padding: 10px;
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.contacts_textarea::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px; 
+    color: #888; 
+    text-align: center;
+}
