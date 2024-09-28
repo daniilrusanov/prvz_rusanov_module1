@@ -2,10 +2,10 @@
     background-color: #CED1FF;
     height: 70px;
     display: flex; 
-        /* Вирівнювання інформації по центру блока */
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
+    /* Вирівнювання інформації по центру блока */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 .extra-section2 {
     background-color: #CED1FF;
