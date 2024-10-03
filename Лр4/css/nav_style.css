@@ -1,0 +1,72 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 20px 150px;
+}
+
+.vector_img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav_left {
+    display: flex; 
+    align-items: center;
+}
+
+.nav_text a {
+    text-decoration: none; 
+    color: inherit; 
+    font-family: inherit; 
+    font-size: inherit;
+}
+.nav_text {
+    display: flex;
+    align-items: center; 
+    gap: 30px;
+}
+
+.nav h3 {
+    margin-left: 10px;
+}
+
+.nav_actions {
+    display: flex; 
+    gap: 15px; 
+}
+
+.sign_in, .sign_up {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.sign_in {
+    color: #4F5665;
+}
+
+.sign_up {
+    background-color: #F53838;
+    color: white;
+    border: 1px solid #F53838; 
+    transition: all 0.3s ease;
+}
+
+.sign_up:hover {
+    background-color: white;
+    color: #F53838;
+}
+
+.nav_text .text:hover {
+    font-weight: bold; 
+    transition: all 0.2s ease;
+}
+
+.sign_in:hover {
+    font-weight: bold; 
+    transition: all 0.3s ease;
+    color: #F53838;
+}
