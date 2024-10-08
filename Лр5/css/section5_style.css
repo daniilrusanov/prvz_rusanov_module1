@@ -1,0 +1,136 @@
+.fifth_section {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+
+.fifth_section h2 {
+    margin-bottom: -40px;
+}
+
+.fifth_section p {
+    font-size: 18px;
+    color: #4F5665;
+    margin-bottom: 60px;
+}
+
+.fifth_section_box {
+    display: inline-block;
+    text-align: left;
+    width: 350px;
+    height: 230px; 
+    background-color: white;
+    border: 1px solid #4F5665;
+    border-radius: 15px;
+    padding: 30px 30px 0 30px;
+    margin: 0 15px;
+    position: relative;
+    vertical-align: top;
+    transition: border-color 0.3s ease;
+}
+
+.fifth_section_box:hover {
+    border: 2px solid #F53838; 
+}
+
+.fifth_section_img {
+    float: left;
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin-right: 10px; 
+}
+
+.fifth_section_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.fifth_section_name {
+    font-weight: bold;
+}
+
+.fifth_section_country {
+    font-size: 16px;
+    color: #4F5665;
+}
+
+.fifth_section_score {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-top: -30px; 
+}
+
+.fifth_section .text {
+    margin-top: 70px;
+}
+
+.fifth_section_footer {
+    margin-top: 80px;
+    margin-bottom: 280px;
+}
+
+.scrolling_img {
+    float: left;
+    margin-left: 100px;
+}
+
+.scrolling_button1, 
+.scrolling_button2 {
+    float: right;
+    margin-top: -20px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #F53838; 
+    color: #F53838; 
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);   
+}
+
+.scrolling_button1:hover,
+.scrolling_button2:hover {
+    background-color: #F53838; 
+    color: white; 
+    box-shadow: 0 4px 8px #F53838;
+}
+
+.scrolling_button1 {
+    margin-right: 20px;   
+}
+
+.scrolling_button2 {
+    margin-right: 100px;   
+}
+
+/* Адаптивність для планшетів (від 768px до 1024px) */
+@media (max-width: 1024px) {
+    .fifth_section_box {
+        width: 80%; 
+        height: auto; 
+    }
+}
+
+/* Адаптивність для мобільних пристроїв (до 768px) */
+@media (max-width: 768px) {
+    .fifth_section_box {
+        width: 90%; 
+        height: auto; 
+        margin: 20px 0; 
+    }
+
+    .fifth_section h2 {
+        font-size: 24px; 
+    }
+
+    .fifth_section p {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,80 @@
+.nav {
+    padding: 20px 150px;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 0px 0px;
+    grid-template-areas: "Logo Menu Menu Menu Menu Menu Button Button";
+    grid-auto-flow: row dense;
+    align-items: center;
+}
+
+.vector_img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.nav_left {
+    grid-area: Logo;
+    display: flex;
+    align-items: center;
+}
+
+.nav_text a {
+    text-decoration: none; 
+    color: inherit; 
+    font-family: inherit; 
+    font-size: inherit;
+}
+.nav_text {
+    grid-area: Menu;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-flow: row dense;
+    align-items: center; 
+}
+
+.nav h3 {
+    margin-left: 10px;
+}
+
+.nav_actions {
+    display: flex; 
+}
+
+.sign_in, .sign_up {
+    float: right;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.sign_in {
+    grid-area: Button;
+    color: #4F5665;
+}
+
+.sign_up {
+    grid-area: Button;
+    background-color: #F53838;
+    color: white;
+    border: 1px solid #F53838; 
+    transition: all 0.3s ease;
+}
+
+.sign_up:hover {
+    background-color: white;
+    color: #F53838;
+}
+
+.nav_text .text:hover {
+    font-weight: bold; 
+    transition: all 0.2s ease;
+}
+
+.sign_in:hover {
+    font-weight: bold; 
+    transition: all 0.3s ease;
+    color: #F53838;
+}
