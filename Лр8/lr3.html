@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Русанов Данііл КН-31 Варіант №24 Лр8</title>
+
+    <script src="js/lr3.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link href="css/main_style.css" rel="stylesheet">
+    <link href="css/main_lr2_style.css" rel="stylesheet">
+    <link href="css/text_style.css" rel="stylesheet">
+</head>
+
+<body>
+    <a id="Lr3"></a>
+    <header class="header_section">
+        <h1>Лабораторна робота №2 Javascript</h1>
+        <h2>Виконав студент групи КН-31 Русанов Д.Д.</h2>
+        <h2>Варіант - 9</h2>
+    </header>
+
+    <section class="switch_lr">
+        <h3><a href="lr1.html">Лабораторна робота №1</a></h3>
+        <span class="switch_lr_divisor">|<br>|</span>
+        <h3><a href="lr2.html">Лабораторна робота №2</a></h3>
+        <span class="switch_lr_divisor">|<br>|</span>
+        <h3><a href="#Lr3">Лабораторна робота №3</a></h3>
+    </section>
+
+
+    <section class="main_section">
+        <h2>Завдання</h2>
+        <div class="text">
+            Створити масиви значень для задач:<br>
+            <ul>
+                <li>Базовий клас: Студент (поле: ім`я, середній бал s)</li>
+                <li>Метод: Стипендія 3000 + 1000 ([s] -5)</li>
+                <li>Нащадок: Магістр (поле - спеціальність)</li>
+                <li>Зміни в нащадках: Збільшити стипендію на m грн.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="work_section_lr2">
+        <aside>
+            <h1>Базовий клас</h1>
+            <div class="input-group">
+                <label class="work_section_lr2_label" for="studentName_bc">Ім'я студента:</label>
+                <input type="text" id="studentName_bc" placeholder="Введіть ім'я">
+            </div>
+            <div class="input-group">
+                <label class="work_section_lr2_label" for="averageScore_bc">Середній бал:</label>
+                <input type="number" id="averageScore_bc" step="0.1" placeholder="Введіть середній бал">
+            </div>
+
+            <button class="work_button" onclick="calculateStudentScholarship()">Розрахувати</button>
+    
+            <div id="result_bc" class="result_bc"></div>
+    </aside>
+
+        <aside>
+            <h1>Клас нащадок</h1>
+            <div class="input-group">
+                <label class="work_section_lr2_label" for="studentName">Ім'я студента:</label>
+                <input type="text" id="studentName" placeholder="Введіть ім'я">
+            </div>
+            <div class="input-group">
+                <label class="work_section_lr2_label" for="averageScore">Середній бал:</label>
+                <input type="number" id="averageScore" step="0.1" placeholder="Введіть середній бал">
+            </div>
+            <div class="input-group">
+                <label class="work_section_lr2_label" for="masterSpecialty">Спеціальність магістра:</label>
+                <input type="text" id="masterSpecialty" placeholder="Введіть спеціальність">
+            </div>
+            <div class="input-group">
+                <label class="work_section_lr2_label" for="additionalScholarship">Додаткова стипендія (грн):</label>
+                <input type="number" id="additionalScholarship" step="100" placeholder="Введіть додаткову стипендію">
+            </div>
+            <button class="work_button" onclick="calculateMasterScholarship()">Розрахувати</button>
+    
+            <div id="result" class="result"></div>
+    </aside>
+        </aside>
+    </section>
+</body>
+</html>

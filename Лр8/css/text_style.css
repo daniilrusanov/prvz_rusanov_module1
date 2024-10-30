@@ -1,0 +1,78 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+}
+
+a {
+    all: unset;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.text {
+    font-size: 16px;
+    color: #4d5057;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    color: #0B132A;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.switch_lr_divisor {
+    line-height: 0.5;
+    margin: 0;
+    padding: 0;
+    font-weight: 400; 
+}
+
+.switch_lr h3 {
+    font-size: 21px;
+    font-weight: 450;
+}
+
+.work_button {
+    width: 220px;
+    height: 45px;
+    background-color: indigo;
+    color: white;
+    border: 1px solid indigo;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px; 
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px indigo;
+    margin-bottom: 30px;
+}
+
+.work_button:hover {
+    background-color: white;
+    color: indigo;
+}
+
+.switch_lr h3:hover {
+    font-weight: bold; 
+    transition: all 0.2s ease;
+}
